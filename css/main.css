@@ -1,0 +1,246 @@
+/* Go the extra mile, its never crowded. */
+body {
+	font-family: arial,sans-serif;
+	}
+.center {
+	width:800px;
+	height:400px;
+	position:absolute;
+    z-index: 0;
+	left:50%;
+	top:50%;
+	margin:-200px 0 0 -325px;
+	text-align:center;
+}
+a:hover {
+	text-decoration:underline;
+	}
+nav {
+	float: right;
+	width: 280px;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-size: .8em;
+}
+nav a {
+	color: #222;
+	display: block;
+	float:left;
+	margin: 0px 8px;
+	}
+.apps {
+	text-indent: -9999px;
+	height: 16px;
+	width: 16px;
+	background: url(../images/apps.png);
+	margin-top:5px;
+	}
+.signin {
+	font-weight: bold;
+	color: #FFF;
+	background: #4485f4;
+	padding: 8px 10px;
+	border-style: none;
+	border-radius: 2px;
+	}
+.l {
+	line-height: 25px;	
+	}
+.signin:hover {
+	text-decoration:none;
+	}
+.search {
+	width:90%;
+	height:36px;
+	border-top: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	background: url(../images/micro.png) no-repeat 99% center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	}
+.button {
+	font-size: .8em;
+	font-weight: bold;
+	color: #757575;
+	background: #f2f2f2;
+	height: 35px;
+	border: 1px solid #dbdbdb;
+	padding: 3px 7px;
+	margin: 0px 6px;
+	}
+p {
+	font-size: .8em;
+	color: #222;
+	margin-top: 35px;
+}
+a {
+	text-decoration: none;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+section.pirateboat {
+	position:relative;
+	float:left;
+	z-index:5;
+}
+.pirateboat-support {
+	position:absolute;
+	width:123px;
+	height:138px;
+	margin-top:70px;
+	margin-left:-50px;
+	z-index:2;
+	animation:
+}
+.pirateboat-boat {
+	position:absolute;
+	width:153px;
+	height:119px;
+	margin-top:80px;
+	margin-left: -65px;
+	z-index:-2;
+	animation: pirateboat 2s linear infinite;
+}
+section.rollercoaster-1{
+	float:left;
+}	
+.rollercoaster-sprite {
+	background-image: url(../images/rollercoaster-sprite.png);
+	width:446px;
+	height:215px;
+	display:block;
+	animation: coaster 5s infinite steps(23);
+}
+section.ferris-wheel {
+	float:right;
+	position:absolute;
+	left:304px;
+}
+.ferris-wheel-support {
+	width:136px;
+	padding-top:100px;
+	padding-left:20px;
+}
+.ferris-wheel-circles {
+	width:175px;
+	height:176px;
+	margin-top:-210px;
+	animation: ferriswheel-circles 13s linear infinite;
+}
+.ferris-wheel-mickey-star {
+	width:117px;
+	height:124px;
+	margin-top:-150px;
+	padding-left:30px;
+	z-index:10 !important;
+}
+.ferris-wheel-cars {
+	width:175px;
+	height:176px;
+	margin-top:-145px;
+}
+.ferris-wheel-cars-1,
+.ferris-wheel-cars-2,
+.ferris-wheel-cars-3,
+.ferris-wheel-cars-4,
+.ferris-wheel-cars-5,
+.ferris-wheel-cars-6,
+.ferris-wheel-cars-7,
+.ferris-wheel-cars-8,
+.ferris-wheel-cars-9,
+.ferris-wheel-cars-10,
+.ferris-wheel-cars-11,
+.ferris-wheel-cars-12 {
+	width:31px;
+	height:30px;
+	margin-top:-30px;
+	margin-left:15px;
+	animation-name: ferriswheel-cars-1;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.ferris-wheel-cars-1{;
+	margin-top:5px;
+	margin-left:15px;
+	animation-name: ferriswheel-cars-1;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.ferris-wheel-cars-2{
+	animation-delay: 1s;
+}
+.ferris-wheel-cars-3{
+
+	animation-delay:2s;
+}
+.ferris-wheel-cars-4{
+	animation-delay:3s;
+}
+.ferris-wheel-cars-5{
+	animation-delay:4s;
+}
+.ferris-wheel-cars-6{
+	animation-delay:5s;
+}
+.ferris-wheel-cars-7{
+	animation-delay:6s;
+}
+.ferris-wheel-cars-8{
+	animation-delay:7s;
+}
+.ferris-wheel-cars-9{
+	animation-delay:8s;
+}
+.ferris-wheel-cars-10{
+	animation-delay:9s;
+}
+.ferris-wheel-cars-11{
+	animation-delay:10s;
+}
+.ferris-wheel-cars-12{
+	animation-delay:11s;
+}
+.clearfix{
+	clear:both;
+}
+
+@keyframes pirateboat {
+	0% {
+		transform: translateX(0) translateY(0);
+	}
+	25% {
+		transform: translateX(-20px) rotate(20deg);
+		
+	}
+	50% { 
+		transform: translateX(0) translateY(0);
+	}
+	75% {
+		transform: translateX(20px) rotate(-20deg);
+	}
+	100% {
+		transform: translateX(0) translateY(0);
+	}
+}
+@keyframes coaster {
+	100% {background-position: 0 -4945px;} 
+}
+@keyframes ferriswheel-circles {
+	100% { transform: rotate(360deg);}
+}
+@keyframes ferriswheel-cars-1 {
+	from {
+		transform:translate(60px,60px) rotate(0deg)
+		translate(-60px,-60px) rotate(0deg)
+	}
+	to {
+		transform:translate(60px,60px) rotate(360deg)
+		translate(-60px,-60px) rotate(-360deg)
+}
+
+
+
